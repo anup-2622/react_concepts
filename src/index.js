@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import createRoot from 'react-dom';
 
 // Babel is a js compiler
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // ReactDOM.render(What to show , where to show it)    
-ReactDOM.render(
+createRoot.render(
     <div>
 
 <h2>Happy coding</h2>
