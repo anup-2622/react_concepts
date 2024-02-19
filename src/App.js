@@ -1,11 +1,10 @@
 
 import './App.css';
+import { Parent } from './components/child_parent_comp.jsx/Parent';
 
 function App() {
   return (
-    <div className="App">
-       Hello React 
-    </div>
+  <Parent/>
   );
 }
 
