@@ -9,7 +9,6 @@ const Propsconcept = () => {
       <h2>My Contact</h2>
       {contacts.map((data) =>
       (
-
           <Cardcontact  name={data.name} number={data.phone} email={data.email} image={data.imgURL} />
       ))}
 
