@@ -7,12 +7,12 @@ import Propsconcept from './udmey/Propsconcept';
 function App() {
   return (
   // <Parent/>
-  <>
+  <div className=' w-screen bg-black '>
   
   <Inlinecss/>
-  <div className="">hello {name} {profession} </div>
+  <div className="border">hello {name} {profession} </div>
   <Propsconcept/>
-  </>
+  </div>
 
   );
 }
