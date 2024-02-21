@@ -4,12 +4,19 @@ import Avatar from './Avatart';
 const Cardcontact = (props) => {
     // console.log(props);
   return (
-    <div className=' w-1/2 bg-red-300 '>
+    <div className='relative w-1/4 my-2 bg-red-300 border h-52 rouned '>
+    
+    <div className='bg-green-200 h-1/2'>
+
       <h2>{props.name}</h2>
-      {/* <img src={props.image} height={200}  className='rounded-lg' width={200} alt="Avtar_" /> */}
+      
       <Avatar img={props.image}/>
+    </div>
+    <div className='bg-blue-300 h-1/2'>
+
       <p>{props.number}</p>
       <p>{props.email}</p>
+    </div>
     </div>
   )
 }
