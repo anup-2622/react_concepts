@@ -10,10 +10,10 @@ function App() {
   // <Parent/>
   <div className='w-screen '>
   
-  <Inlinecss/>
+  {/* <Inlinecss/>
   <div className="border">hello {name} {profession} </div>
   <Propsconcept/>
-  <Emoji/>
+  <Emoji/> */}
   </div>
 
   );

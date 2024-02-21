@@ -5,7 +5,7 @@ import contacts from './Contact'
 const Propsconcept = () => {
     // console.log(contacts);
   return (
-    <div className='w-screen text-center bg-slate-200'>
+    <div className='text-center  bg-slate-200'>
       <h2>My Contact</h2>
       <div className="flex flex-wrap items-center justify-center">
 

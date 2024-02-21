@@ -1,9 +1,10 @@
 import React from "react";
 import emojipedia from "./emojipedia";
 import EmojiCard from "./EmojiCard";
+import Higheorder from "./Higherorder";
 
+// console.log(emojipedia);
 function Emoji() {
-//   console.log(emoj   ipedia);
   return (
     <div className="w-full font-serif text-lg text-center bg-green-600 ">
       <h2>Emoji Meaning</h2>
@@ -12,6 +13,7 @@ function Emoji() {
           <EmojiCard key={emoji.id} data={emoji} />
         ))}
       </div>
+      <Higheorder/>
     </div>
   );
 }
