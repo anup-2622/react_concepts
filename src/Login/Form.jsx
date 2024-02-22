@@ -2,7 +2,7 @@ import React from "react";
 import Input from "./Input";
 import Button from "./Button";
 
-function Form() {
+function Form(props) {
   return (
     <div className="flex items-center justify-center border">
       <form>
@@ -12,9 +12,16 @@ function Form() {
         <div>
           <Input type={"password"} placeholder={"password"} />
         </div>
+        <div>
+         {
+(props.formChecking === false ) && <Input type={"password"} placeholder={"confirm password"} />
+         }
+        </div>
         <div className="text-center ">
-            <Button value={"Submit"} class={"p-2 bg-blue-400 border rounded-md "}/>
-          <button className="p-2 bg-blue-400 border rounded-md ">Submit</button>
+           {
+            (props.formChecking)? <Button value={"Login"} class={"p-2 bg-blue-400 border rounded-md "}/> : <Button value={"Register"} class={"p-2 bg-blue-400 border rounded-md "}/>
+           }
+  
         </div>
       </form>
     </div>
