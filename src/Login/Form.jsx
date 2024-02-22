@@ -14,7 +14,8 @@ function Form(props) {
         </div>
         <div>
          {
-(props.formChecking === false ) && <Input type={"password"} placeholder={"confirm password"} />
+// (props.formChecking === false ) && <Input type={"password"} placeholder={"confirm password"} />
+(!props.formChecking) && <Input type={"password"} placeholder={"confirm password"} />
          }
         </div>
         <div className="text-center ">
