@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Listitem from "./Listitem";
 
 function SpeardOperator(){
 
@@ -20,6 +21,17 @@ function SpeardOperator(){
         }
     }
 
+    function handledelete(id)
+    {
+   
+        setLists((prev)=>{
+           return prev.filter((item , index)=>{
+                return index !== id;
+            })
+        })
+
+    }
+    
     return(
         <div className="flex flex-col items-center justify-center w-screen">
             <div className="">
@@ -32,8 +44,8 @@ function SpeardOperator(){
 
                 <div className="listsec">
                     <ul>
-                    {lists.map((list)=>
-                (<li key={list}>{list}</li>)   
+                    {lists.map((list , index)=>
+                                <Listitem key={index} onChecked={handledelete} id={index} item={list}/>   
                     
                     )}
                     </ul>
