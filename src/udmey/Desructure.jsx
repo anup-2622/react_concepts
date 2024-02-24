@@ -7,16 +7,26 @@ import Button from "../Login/Button";
 function Desructure() {
 
     const [headingText , setHeadingText] = useState("Hello");
-    const [isMouseover , setIsMouse] = useState(false)
+    const [isMouseover , setIsMouse] = useState(false);
+    const [name , setName] = useState("Anup");
 
 function mouseOver(){
     setIsMouse(true)
 }
-function mouseOut(){
+function mouseOut(){ 
     setIsMouse(false)
 }
 
+function handleChange(){
 
+}
+
+
+// function onChange()
+// {
+//     // setName(e.target.value)
+//     // console.log("changed");
+// }
 
   const [honda, tesla] = cars;
 
@@ -34,7 +44,7 @@ function mouseOut(){
   function handlingSubmit(){
     setHeadingText("Submited")
     setTimeout(() => {
-        setHeadingText("Hello User")
+        setHeadingText("Hello")
     }, 1000);
   }
 
@@ -86,8 +96,8 @@ function mouseOut(){
 
 <div className="my-4">
 
-    <h3>{headingText}</h3>
-    <Input type={"text"} placeholder={"Enter your Name"}/>
+    <h3>{headingText} {name}</h3>
+    <Input type={"text"} onChange={handleChange} value={name}  placeholder={"Enter your Name"}/>
     <Button onMouseover={mouseOver} onMouseOut={mouseOut} onClick={handlingSubmit} validation={isMouseover} value={"Submit"} class={"p-2 bg-green-400 rounded mx-2"}/>
 </div>
 

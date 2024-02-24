@@ -8,6 +8,7 @@ import Emoji from './udmey/emoji/Emoji';
 import Login from './Login/Login';
 import React, { useState } from 'react';
 import Desructure from './udmey/Desructure';
+import SpeardOperator from './udmey/SpeardOperator';
 
 
 const isAuthenticated = false;
@@ -34,7 +35,12 @@ function App() {
   <Emoji/> */}
    {/* <p>{mytime}</p> */}
    {/* <button onClick={gettime()}>get time</button> */}
-   <Desructure/>
+   {/* <Desructure/> */}
+
+
+{/* TO DO List */}
+<SpeardOperator/>
+
   </div>
 
   );
