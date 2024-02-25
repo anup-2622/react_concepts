@@ -9,6 +9,7 @@ import Login from './Login/Login';
 import React, { useState } from 'react';
 import Desructure from './udmey/Desructure';
 import SpeardOperator from './udmey/SpeardOperator';
+import Main from './keeper/Main';
 
 
 const isAuthenticated = false;
@@ -26,7 +27,7 @@ function App() {
 //  console.log(time);
   return (
   // <Parent/>
-  <div className='flex items-center justify-center w-screen h-screen bg-blue-200 '>
+  <div className='w-screen h-screen bg-white '  >
   
   {/* <Login isRegistered={isAuthenticated} /> */}
   {/* <Inlinecss/>
@@ -39,7 +40,11 @@ function App() {
 
 
 {/* TO DO List */}
-<SpeardOperator/>
+{/* <SpeardOperator/> */}
+
+{/* Keeper App */}
+<Main/>
+
 
   </div>
 

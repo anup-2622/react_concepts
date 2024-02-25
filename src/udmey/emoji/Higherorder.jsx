@@ -6,7 +6,7 @@ var meaning = emojipedia.map((data)=>(
    data.meaning.substring(0,100)
    
 ))
-console.log(meaning);
+// console.log(meaning);
 
 function Higheorder(){
 return(
